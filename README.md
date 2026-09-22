@@ -24,7 +24,7 @@ Each aorta is a 3D point cloud from CT (518 scans from MFS and LDS patients). Th
 2. A **continuous normalizing flow (CNF) prior** organizes those codes into a well-structured space.
 3. A **conditional CNF decoder** rebuilds the full aorta from a code (normalized Chamfer distance < 0.001).
 
-![Model architecture](assets/fig1-architecture.png)
+![Model architecture](assets/fig1-architecture.png?v=2)
 
 ## Key findings
 
@@ -34,7 +34,7 @@ Each aorta is a 3D point cloud from CT (518 scans from MFS and LDS patients). Th
   - PC5, increasing ascending curvature and descending bending (p_FDR = 0.0009, r = 0.46)
   - PC6, ascending dilation with upper descending elongation (p_FDR = 0.029, r = 0.30)
 
-![Shape modes](assets/fig2-shape-modes.png)
+![Shape modes](assets/fig2-shape-modes.png?v=2)
 
 ![Drivers of anomalous growth](assets/fig3-anomaly-drivers.jpg)
 

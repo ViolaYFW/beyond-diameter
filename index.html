@@ -8,7 +8,7 @@
 <meta name="description" content="A deep generative model that learns the full 3D shape of the thoracic aorta and finds shape changes that a single diameter measurement misses. Oral presentation, BMES 2026.">
 <meta property="og:title" content="Beyond Diameter">
 <meta property="og:description" content="Learning the full 3D shape of the aorta to track aneurysm growth in Marfan and Loeys-Dietz syndromes. Oral presentation, BMES 2026.">
-<meta property="og:image" content="https://violayfw.github.io/beyond-diameter/assets/fig2-shape-modes.png">
+<meta property="og:image" content="https://violayfw.github.io/beyond-diameter/assets/fig2-shape-modes.png?v=2">
 <meta property="og:url" content="https://violayfw.github.io/beyond-diameter/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫀</text></svg>">
@@ -155,7 +155,7 @@ footer p{max-width:40rem}
     <p>Because the decoder can rebuild each aorta from its code, the code is a faithful summary of the whole shape. Reconstructions are very close to the real anatomy, with a normalized Chamfer distance below <span class="num">0.001</span>.</p>
   </div>
   <figure class="narrow">
-    <div class="plate"><img src="assets/fig1-architecture.png" alt="Model diagram: an input aortic point cloud goes into a PointNet encoder, which produces a latent code z. One branch trains a CNF prior on z; the other branch uses a conditional CNF decoder to reconstruct the point cloud." width="735" height="530"></div>
+    <div class="plate"><img src="assets/fig1-architecture.png?v=2" alt="Model diagram: an input aortic point cloud goes into a PointNet encoder, which produces a latent code z. One branch trains a CNF prior on z; the other branch uses a conditional CNF decoder to reconstruct the point cloud." width="735" height="530"></div>
     <figcaption><b>Figure 1.</b> Model architecture. The PointNet encoder maps a point cloud to a latent code. The CNF prior (left) learns the distribution of codes. The CNF decoder (right) reconstructs the point cloud from the code.</figcaption>
   </figure>
 </section>
@@ -170,7 +170,7 @@ footer p{max-width:40rem}
     <p>We compared this with a standard autoencoder and a variational autoencoder. The CNF prior gave the most structured latent space, without losing reconstruction quality.</p>
   </div>
   <figure>
-    <div class="plate"><img src="assets/fig2-shape-modes.png" alt="Eight pairs of aortic point clouds, each pair showing the shape at minus three and plus three standard deviations along one principal component, plus a box plot showing LDS patients have higher PC5 scores than MFS patients." width="736" height="214"></div>
+    <div class="plate"><img src="assets/fig2-shape-modes.png?v=2" alt="Eight pairs of aortic point clouds, each pair showing the shape at minus three and plus three standard deviations along one principal component, plus a box plot showing LDS patients have higher PC5 scores than MFS patients." width="736" height="214"></div>
     <figcaption><b>Figure 2.</b> The eight shape modes (A–H), each shown from −3σ to +3σ. Panel I: PC5 separates the two syndromes, with LDS patients scoring higher than MFS patients (p<sub>FDR</sub> &lt; 0.001).</figcaption>
   </figure>
 
