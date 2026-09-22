@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Beyond Diameter: learning the full shape of the aorta in Marfan and Loeys-Dietz syndromes</title>
 <meta name="description" content="A deep generative model that learns the full 3D shape of the thoracic aorta and finds shape changes that a single diameter measurement misses. Oral presentation, BMES 2026.">
@@ -37,6 +38,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
 img{max-width:100%;height:auto;display:block}
+.plate img{background:#FFFFFF;filter:none}
 a{color:var(--cloud);text-underline-offset:3px}
 a:focus-visible,summary:focus-visible{outline:2px solid var(--caliper);outline-offset:3px;border-radius:2px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
@@ -79,7 +81,7 @@ p{margin:0 0 1rem}
 .num{font-variant-numeric:tabular-nums;white-space:nowrap}
 
 figure{margin:2rem 0 2.5rem}
-.plate{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:1rem}
+.plate{background:#FFFFFF;color-scheme:light;border:1px solid var(--rule);border-radius:6px;padding:1rem}
 figure.narrow .plate{max-width:560px}
 figure.mid .plate{max-width:760px}
 figcaption{color:var(--muted);font-size:.93rem;line-height:1.55;margin-top:.75rem;max-width:44rem}
